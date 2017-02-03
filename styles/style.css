@@ -101,11 +101,42 @@ img {
 /*------------------
 | - right-info COMPONENT STYLES -  |
 ------------------*/
-.right-info > img {
+.right-info__center > img {
+  margin-left: 1rem;
 }
 
-.top {
-  float: right;
+.right-info__top {
   border: 1px solid blue;
-  display: block;
+  overflow: auto;
+}
+
+.top_ammo {
+  font-size: 2.5rem;
+  float: right;
+  margin: 0;
+}
+
+.right-info__center > * {
+  float: left;
+}
+
+.right-info__center {
+    border-right: .5rem solid #46a5ac;
+    overflow: auto;
+    padding-right: 1rem;
+    position: relative;
+}
+
+.ability-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.ability {
+  border: thin solid white;
+  border-radius: 1rem;
+  padding: .5rem;
+  height: 7.5rem;
+
 }
