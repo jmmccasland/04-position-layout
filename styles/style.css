@@ -1,10 +1,19 @@
+/*------------------
+| - CSS RESETS -  |
+------------------*/
 body {
-  background: red;
   margin: 0;
   font-size: 1rem;
+
+  background: url('../img/bg.jpg');
+  background-size: cover;
   color: white;
 }
 
 * {
   box-sizing: border-box;
 }
+
+/*------------------
+| - LAYOUT STYLES -  |
+------------------*/
