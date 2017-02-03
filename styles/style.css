@@ -52,6 +52,7 @@ img {
   right: 3rem;
   overflow: auto;
   border: 1px solid red;
+  width: 35rem;
 }
 
 
@@ -68,7 +69,7 @@ img {
 .stacked__bar-status {
   /*background: purple;*/
   overflow: auto;
-  transform: rotate(1rem);
+  /*transform: rotate(1rem);*/
 }
 
 .stacked__num-status > p span{
@@ -101,36 +102,38 @@ img {
 /*------------------
 | - right-info COMPONENT STYLES -  |
 ------------------*/
-.right-info__center > img {
-  margin-left: 1rem;
-}
-
-.right-info__top {
-  border: 1px solid blue;
-  overflow: auto;
-}
-
-.top_ammo {
-  font-size: 2.5rem;
-  float: right;
-  margin: 0;
-}
-
-.right-info__center > * {
-  float: left;
-}
-
 .right-info__center {
     border-right: .5rem solid #46a5ac;
     overflow: auto;
     padding-right: 1rem;
-    position: relative;
+
 }
 
-.ability-img {
+.wrap {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+}
+
+.abilities {
+  float: left;
   position: absolute;
   bottom: 0;
-  left: 0;
+}
+
+.ability-group {
+  float: left;
+}
+
+.ability-group:last-of-type {
+  margin-left: 1rem;
+}
+
+.gun {
+  float: right;
+  text-align: right;
+  font-size: 2.5rem;
+  margin-left: 1rem;
 }
 
 .ability {
