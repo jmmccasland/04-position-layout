@@ -15,6 +15,12 @@ body {
   background: url('../img/bg.jpg');
   background-size: cover;
   color: white;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
 }
 
 
@@ -32,7 +38,7 @@ body {
   left: 3rem;
   overflow: auto;
   /*background: red;*/
-
+  border: 1px solid red;
   font-size: 2rem;
 }
 
@@ -40,21 +46,42 @@ body {
   float: left
 }
 
+.right-info {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  overflow: auto;
+  border: 1px solid red;
+}
+
+
+
 
 
 /*------------------
-| - COMPONENT STYLES -  |
+| - left-info COMPONENT STYLES -  |
 ------------------*/
 .character-icon {
   margin-right: 1rem;
 }
-
 
 .stacked__bar-status {
   /*background: purple;*/
   overflow: auto;
   transform: rotate(1rem);
 }
+
+.stacked__num-status > p span{
+  padding-right: .5rem;
+}
+.num-status__remain {
+  font-size: 3rem;
+}
+
+.blue {
+  color: #155dac;
+}
+
 .health {
   float: left;
   width: 1rem;
@@ -67,4 +94,18 @@ body {
 
 .damage {
   background: rgba(255,255,90,0.75)
+}
+
+
+
+/*------------------
+| - right-info COMPONENT STYLES -  |
+------------------*/
+.right-info > img {
+}
+
+.top {
+  float: right;
+  border: 1px solid blue;
+  display: block;
 }
