@@ -1,19 +1,70 @@
 /*------------------
 | - CSS RESETS -  |
 ------------------*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
 body {
   margin: 0;
-  font-size: 1rem;
 
   background: url('../img/bg.jpg');
   background-size: cover;
   color: white;
 }
 
-* {
-  box-sizing: border-box;
-}
+
 
 /*------------------
 | - LAYOUT STYLES -  |
 ------------------*/
+.section {
+  padding: 1rem;
+}
+
+.left-info {
+  position: fixed;
+  bottom: 3rem;
+  left: 3rem;
+  overflow: auto;
+  /*background: red;*/
+
+  font-size: 2rem;
+}
+
+.left-info > * {
+  float: left
+}
+
+
+
+/*------------------
+| - COMPONENT STYLES -  |
+------------------*/
+.character-icon {
+  margin-right: 1rem;
+}
+
+
+.stacked__bar-status {
+  /*background: purple;*/
+  overflow: auto;
+  transform: rotate(1rem);
+}
+.health {
+  float: left;
+  width: 1rem;
+  height: 2rem;
+  margin: 0.1rem;
+
+  border-radius: .125rem;
+  background: rgba(255,255,255,0.75);
+}
+
+.damage {
+  background: rgba(255,255,90,0.75)
+}
