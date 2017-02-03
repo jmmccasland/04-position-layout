@@ -1,0 +1,10 @@
+body {
+  background: red;
+  margin: 0;
+  font-size: 1rem;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
