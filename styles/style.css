@@ -191,5 +191,45 @@ img {
 
 .center-info__img {
   margin: 0 auto;
+  text-align: center;
   width: 10rem;
+  border: 1px solid red;
+}
+
+.inner-circle {
+  position: relative;
+  width: 11rem;
+  height: 11rem;
+  border: .2rem dashed yellow;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.inner-circle::after {
+  content: " ";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+
+  border: 5px dashed yellow;
+  border-radius: 50%;
+}
+
+.percent {
+  padding: 0;
+  margin: 0;
+
+  line-height: 10rem;
+
+  text-align: center;
+  font-size: 3.5rem;
+  font-style: italic;
+}
+
+/* styles the % symbol */
+.yellow {
+  color: yellow;
+  font-size: 1.5rem;
 }
