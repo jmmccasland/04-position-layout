@@ -13,6 +13,7 @@ body {
   margin: 0;
 
   background: url('../img/bg.jpg');
+  background: black;
   background-size: cover;
   color: #fff;
   font-family: sans-serif;
@@ -46,7 +47,6 @@ img {
 
 .left-info > * {
   float: left;
-
 }
 
 .right-info {
@@ -153,22 +153,18 @@ img {
   border-radius: 1rem;
   padding: .5rem;
   height: 7.5rem;
-  background: #e8dceb;
-  /*transform: skewX(165deg);*/
 }
 
 .keybinding {
   border: 0.1rem solid #e8dceb;
-  background: #e8dceb;
   display: block;
   width: 2.5rem;
   height: 3rem;
   margin: .5rem auto;
+
   text-align: center;
   line-height: 3rem;
   border-radius: .5rem;
   font-size: 1.5rem;
   font-weight: 400;
-  /*transform: skewX(165deg);*/
-
 }
