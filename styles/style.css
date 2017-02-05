@@ -59,6 +59,12 @@ img {
 
 }
 
+.center-info {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
 
 
 
@@ -167,4 +173,23 @@ img {
   border-radius: .5rem;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+/*------------------
+| - center-info COMPONENT STYLES -  |
+------------------*/
+.center-info__action-text {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 2rem;
+  text-align: center;
+}
+.opponent-name {
+  color: red;
+}
+
+.center-info__img {
+  margin: 0 auto;
+  width: 10rem;
 }
