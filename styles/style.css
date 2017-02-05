@@ -61,8 +61,12 @@ img {
 
 .center-info {
   width: 50%;
-  margin: 0 auto;
   border: 1px solid red;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
 }
 
 
@@ -190,13 +194,17 @@ img {
 }
 
 .center-info__img {
-  margin: 0 auto;
+  left: 50%;
+  margin-bottom: 5rem;
+  position: relative;
+  transform: translate(-50%, 0);
   text-align: center;
   width: 10rem;
   border: 1px solid red;
 }
 
 .inner-circle {
+  margin-top: 10rem;
   position: relative;
   width: 11rem;
   height: 11rem;
