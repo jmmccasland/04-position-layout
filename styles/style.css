@@ -12,8 +12,8 @@ html {
 body {
   margin: 0;
 
-  background: url('../img/bg.jpg');
-  background: black;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+              url('../img/bg.jpg');
   background-size: cover;
   color: #fff;
   font-family: sans-serif;
@@ -42,7 +42,6 @@ img {
   overflow: auto;
   font-size: 2rem;
   transform: rotate(-2deg);
-  /*border: 1px solid red;*/
 }
 
 .left-info > * {
@@ -54,19 +53,16 @@ img {
   bottom: 5rem;
   right: 5rem;
   overflow: auto;
-  /*background: green;*/
+  font-size: 2rem;
   transform: skewX(165deg);
 
 }
 
 .center-info {
-  width: 50%;
-  border: 1px solid red;
   position: fixed;
-  top: 50%;
+  top: 70%;
   left: 50%;
-  transform: translate(-50%,-50%);
-
+  transform: translate(-50%, -50%);
 }
 
 
@@ -80,11 +76,21 @@ img {
   margin-right: 1rem;
 }
 
+
+.stacked {
+  margin-top: 4rem;
+
+}
+
 .stacked__bar-status {
-  /*background: purple;*/
   overflow: auto;
   transform: skewX(165deg);
   margin-right: .5rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: .2rem solid #aaa;
+  border-right: .2rem solid #46a5ac;
+  border-radius: .75rem;
 }
 
 .stacked__num-status > p {
@@ -99,7 +105,7 @@ img {
 }
 
 .blue {
-  color: #155dac;
+  color: #46a5ac;
 }
 
 .health {
@@ -121,16 +127,8 @@ img {
 /*------------------
 | - right-info COMPONENT STYLES -  |
 ------------------*/
-
-/*.wrap {
-  position: relative;
-  overflow: auto;
-  width: 100%;
-}*/
-
 .top_ammo {
   text-align: right;
-  font-size: 2.5rem;
   margin: 0;
   padding-right: .25rem;
 }
@@ -168,7 +166,7 @@ img {
 .keybinding {
   border: 0.1rem solid #e8dceb;
   display: block;
-  width: 2.5rem;
+  width: 3rem;
   height: 3rem;
   margin: .5rem auto;
 
@@ -189,26 +187,28 @@ img {
   font-size: 2rem;
   text-align: center;
 }
+
+.center-info__action-text:last-of-type{
+  margin-bottom: 5rem;
+}
 .opponent-name {
   color: red;
 }
 
 .center-info__img {
   left: 50%;
-  margin-bottom: 5rem;
-  position: relative;
-  transform: translate(-50%, 0);
+  top: 40%;
+  position: absolute;
+  transform: translate(-50%, -40%);
   text-align: center;
   width: 10rem;
-  border: 1px solid red;
 }
 
 .inner-circle {
-  margin-top: 10rem;
   position: relative;
   width: 11rem;
   height: 11rem;
-  border: .2rem dashed yellow;
+  border: .4rem dashed rgba(255,255,90,0.85);
   border-radius: 50%;
   margin: 0 auto;
 }
@@ -221,7 +221,7 @@ img {
   right: 10px;
   bottom: 10px;
 
-  border: 5px dashed yellow;
+  border: .2rem dashed rgba(255,255,90,0.85);
   border-radius: 50%;
 }
 
@@ -230,7 +230,6 @@ img {
   margin: 0;
 
   line-height: 10rem;
-
   text-align: center;
   font-size: 3.5rem;
   font-style: italic;
@@ -238,6 +237,6 @@ img {
 
 /* styles the % symbol */
 .yellow {
-  color: yellow;
+  color: rgba(255,255,90,0.85);
   font-size: 1.5rem;
 }
