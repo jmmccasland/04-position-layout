@@ -1,3 +1,6 @@
+/*This code is MESSY :( I'll go through and clean it up eventually, but for now, it does the job!*/
+
+
 /*------------------
 | - CSS RESETS -  |
 ------------------*/
@@ -89,7 +92,7 @@ img {
   padding-right: 1rem;
   padding-bottom: 1rem;
   border-bottom: .2rem solid #aaa;
-  border-right: .2rem solid #46a5ac;
+  border-right: .4rem solid #46a5ac;
   border-radius: .75rem;
 }
 
@@ -184,7 +187,7 @@ img {
   text-transform: uppercase;
   font-weight: 800;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -209,9 +212,11 @@ img {
   width: 11rem;
   height: 11rem;
   border: .4rem dashed rgba(255,255,90,0.85);
+  border-right: .4rem dashed rgba(255,255,255,0.85);;
   border-radius: 50%;
   margin: 0 auto;
 }
+
 
 .inner-circle::after {
   content: " ";
