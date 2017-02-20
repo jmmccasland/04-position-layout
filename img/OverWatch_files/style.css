@@ -1,0 +1,151 @@
+/*------------------
+| - CSS RESETS -  |
+------------------*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+  margin: 0;
+
+  background: url('../img/bg.jpg');
+  background-size: cover;
+  color: white;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+/*------------------
+| - LAYOUT STYLES -  |
+------------------*/
+.section {
+  padding: 1rem;
+}
+
+.left-info {
+  position: fixed;
+  bottom: 3rem;
+  left: 3rem;
+  overflow: auto;
+  /*background: red;*/
+  border: 1px solid red;
+  font-size: 2rem;
+}
+
+.left-info > * {
+  float: left
+}
+
+.right-info {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  overflow: auto;
+  border: 1px solid red;
+  background: green;
+}
+
+
+
+
+
+/*------------------
+| - left-info COMPONENT STYLES -  |
+------------------*/
+.character-icon {
+  margin-right: 1rem;
+}
+
+.stacked__bar-status {
+  /*background: purple;*/
+  overflow: auto;
+  /*transform: rotate(1rem);*/
+}
+
+.stacked__num-status > p span{
+  padding-right: .5rem;
+}
+.num-status__remain {
+  font-size: 3rem;
+}
+
+.blue {
+  color: #155dac;
+}
+
+.health {
+  float: left;
+  width: 1rem;
+  height: 2rem;
+  margin: 0.1rem;
+
+  border-radius: .125rem;
+  background: rgba(255,255,255,0.75);
+}
+
+.damage {
+  background: rgba(255,255,90,0.75)
+}
+
+
+
+/*------------------
+| - right-info COMPONENT STYLES -  |
+------------------*/
+.right-info__center {
+    border-right: .5rem solid #46a5ac;
+    overflow: auto;
+    padding-right: 1rem;
+
+}
+
+/*.wrap {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+}*/
+
+.top_ammo {
+  text-align: right;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.abilities {
+  float: left;
+  /*position: absolute;
+  bottom: 0;*/
+}
+
+.ability-group {
+  float: left;
+}
+
+.ability-group:last-of-type {
+  margin-left: 1rem;
+}
+
+.gun {
+  float: right;
+}
+
+.ability {
+  border: thin solid white;
+  border-radius: 1rem;
+  padding: .5rem;
+  height: 7.5rem;
+}
+
+.keybinding {
+  text-align: center;
+}

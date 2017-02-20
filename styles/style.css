@@ -1,10 +1,267 @@
-body {
-  background: red;
-  margin: 0;
-  font-size: 1rem;
-  color: white;
-}
+/*This code is MESSY :( I'll go through and clean it up eventually, but for now, it does the job!*/
 
+
+/*------------------
+| - CSS RESETS -  |
+------------------*/
 * {
   box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+  margin: 0;
+
+  /*background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+              url('../img/bg.jpg');
+  background-size: cover;*/
+  color: #fff;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+/*------------------
+| - FULL SIZE BG IMAGE -  |
+------------------*/
+#bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+/*------------------
+| - LAYOUT STYLES -  |
+------------------*/
+.section {
+  padding: 2rem;
+
+}
+
+
+.left-info {
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+  overflow: auto;
+  font-size: 2rem;
+  transform: rotate(-2deg);
+}
+
+.left-info > * {
+  float: left;
+}
+
+.right-info {
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  overflow: auto;
+  font-size: 2rem;
+  transform: skewX(165deg);
+
+}
+
+.center-info {
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/*------------------
+| - left-info COMPONENT STYLES -  |
+------------------*/
+.character-icon {
+  margin-right: 1rem;
+}
+
+
+.stacked {
+  margin-top: 4rem;
+
+}
+
+.stacked__bar-status {
+  overflow: auto;
+  transform: skewX(165deg);
+  margin-right: .5rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: .2rem solid #aaa;
+  border-right: .4rem solid #46a5ac;
+  border-radius: .75rem;
+}
+
+.stacked__num-status > p {
+  margin: 0;
+}
+
+.stacked__num-status > p span{
+  padding-right: .5rem;
+}
+.num-status__remain {
+  font-size: 3rem;
+}
+
+.blue {
+  color: #46a5ac;
+}
+
+.health {
+  float: left;
+  width: 1rem;
+  height: 2rem;
+  margin: 0.1rem;
+
+  border-radius: .125rem;
+  background: rgba(255,255,255,0.85);
+}
+
+.damage {
+  background: rgba(255,255,90,0.85)
+}
+
+
+
+/*------------------
+| - right-info COMPONENT STYLES -  |
+------------------*/
+.top_ammo {
+  text-align: right;
+  margin: 0;
+  padding-right: .25rem;
+}
+
+.abilities {
+  float: left;
+  margin-right: 1rem;
+}
+
+.ability-group {
+  float: left;
+  margin-left: 1rem;
+
+}
+
+.gun {
+  border-right: .75rem solid #46a5ac;
+  padding-right: 1rem;
+  float: right;
+  border-radius: 1rem;
+}
+.gun-img {
+
+  height: 10rem;
+
+}
+
+.ability {
+  border: thin solid #e8dceb;
+  border-radius: 1rem;
+  padding: .5rem;
+  height: 7.5rem;
+}
+
+.keybinding {
+  border: 0.1rem solid #e8dceb;
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  margin: .5rem auto;
+
+  text-align: center;
+  line-height: 3rem;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/*------------------
+| - center-info COMPONENT STYLES -  |
+------------------*/
+.center-info__action-text {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.center-info__action-text:last-of-type{
+  margin-bottom: 5rem;
+}
+.opponent-name {
+  color: red;
+}
+
+.center-info__img {
+  left: 50%;
+  top: 40%;
+  position: absolute;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  width: 10rem;
+}
+
+.inner-circle {
+  position: relative;
+  width: 11rem;
+  height: 11rem;
+  border: .4rem dashed rgba(255,255,90,0.85);
+  border-right: .4rem dashed rgba(255,255,255,0.85);;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+
+.inner-circle::after {
+  content: " ";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+
+  border: .2rem dashed rgba(255,255,90,0.85);
+  border-radius: 50%;
+}
+
+.percent {
+  padding: 0;
+  margin: 0;
+
+  line-height: 10rem;
+  text-align: center;
+  font-size: 3.5rem;
+  font-style: italic;
+}
+
+/* styles the % symbol */
+.yellow {
+  color: rgba(255,255,90,0.85);
+  font-size: 1.5rem;
 }
